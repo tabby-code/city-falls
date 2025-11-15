@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="City-Falls"
-run/main_scene="uid://dab1voml7y47u"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="uid://cw58c6k537u2"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]

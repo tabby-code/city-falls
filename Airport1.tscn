@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1fq1u00ba1sr"]
+
+[ext_resource type="Texture2D" uid="uid://cyetvnp7ud8bl" path="res://IMG_0441.jpg.webp" id="1_e48h8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5t6y"]
+texture = ExtResource("1_e48h8")
+modulate_color = Color(0.456464, 0.456464, 0.456464, 1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -43.0
+offset_top = -33.0
+offset_right = 1194.0
+offset_bottom = 688.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_i5t6y")
