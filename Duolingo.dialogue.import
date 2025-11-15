@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://mkcd1tmc5t67"
+path="res://.godot/imported/Duolingo.dialogue-180a98c4029c132a863ad188e159e715.tres"
+
+[deps]
+
+source_file="res://Duolingo.dialogue"
+dest_files=["res://.godot/imported/Duolingo.dialogue-180a98c4029c132a863ad188e159e715.tres"]
+
+[params]
+
+defaults=true
