@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d1iyjeebokhpy"
+path="res://.godot/imported/airport 1.dialogue-66c189ed8b0120af5be54c135b18c446.tres"
+
+[deps]
+
+source_file="res://airport 1.dialogue"
+dest_files=["res://.godot/imported/airport 1.dialogue-66c189ed8b0120af5be54c135b18c446.tres"]
+
+[params]
+
+defaults=true
