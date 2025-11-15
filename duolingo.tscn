@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://sotea1t25d02" path="res://duolingo flying.tscn" id="2_v4bok"]
 [ext_resource type="PackedScene" uid="uid://b8mwvpnafsvdo" path="res://nicole idle.tscn" id="3_x8wbj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_40u7u"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4bok"]
 texture = ExtResource("1_p8xkb")
 0:0/0 = 0
 1:0/0 = 0
@@ -11672,7 +11672,7 @@ texture = ExtResource("1_p8xkb")
 143:80/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_v4bok"]
-sources/0 = SubResource("TileSetAtlasSource_40u7u")
+sources/0 = SubResource("TileSetAtlasSource_v4bok")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4bok"]
 size = Vector2(2343.25, 134.5)
