@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://b8mwvpnafsvdo"]
+
+[ext_resource type="Script" uid="uid://0111x5pe8xnp" path="res://character_body_2d.gd" id="1_t0jo0"]
+[ext_resource type="Texture2D" uid="uid://v3gnrijn3hie" path="res://pixil-frame-0.png" id="2_i2oqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ddeg"]
+atlas = ExtResource("2_i2oqi")
+region = Rect2(0, 24, 15, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vvxk"]
+atlas = ExtResource("2_i2oqi")
+region = Rect2(15, 24, 15, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbyyh"]
+atlas = ExtResource("2_i2oqi")
+region = Rect2(30, 24, 15, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nimxv"]
+animations = [{
+"frames": [{
+"duration": 1.31,
+"texture": SubResource("AtlasTexture_3ddeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vvxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbyyh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kfjc6"]
+radius = 110.2225
+
+[node name="Nicole" type="CharacterBody2D"]
+position = Vector2(443, -88)
+script = ExtResource("1_t0jo0")
+
+[node name="Nicole Idle" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-970.625, 549.5)
+scale = Vector2(20.616669, 12.791667)
+sprite_frames = SubResource("SpriteFrames_nimxv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-942, 548)
+shape = SubResource("CircleShape2D_kfjc6")

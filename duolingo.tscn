@@ -1,8 +1,8 @@
-[gd_scene load_steps=13 format=4 uid="uid://dab1voml7y47u"]
+[gd_scene load_steps=6 format=4 uid="uid://dab1voml7y47u"]
 
 [ext_resource type="Texture2D" uid="uid://dftxs6a21lknv" path="res://free-city-backgrounds-pixel-art/city 2/10.png" id="1_p8xkb"]
-[ext_resource type="Texture2D" uid="uid://cuk2poyrwjj87" path="res://pixil-frame-0-2.png" id="2_v4bok"]
-[ext_resource type="Texture2D" uid="uid://v3gnrijn3hie" path="res://pixil-frame-0.png" id="3_x8wbj"]
+[ext_resource type="PackedScene" uid="uid://sotea1t25d02" path="res://duolingo flying.tscn" id="2_v4bok"]
+[ext_resource type="PackedScene" uid="uid://b8mwvpnafsvdo" path="res://nicole idle.tscn" id="3_x8wbj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_40u7u"]
 texture = ExtResource("1_p8xkb")
@@ -11674,57 +11674,6 @@ texture = ExtResource("1_p8xkb")
 [sub_resource type="TileSet" id="TileSet_v4bok"]
 sources/0 = SubResource("TileSetAtlasSource_40u7u")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ed62n"]
-atlas = ExtResource("2_v4bok")
-region = Rect2(0, 0, 41, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_01mf4"]
-atlas = ExtResource("2_v4bok")
-region = Rect2(41, 0, 41, 100)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_p2tau"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ed62n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_01mf4")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3ddeg"]
-atlas = ExtResource("3_x8wbj")
-region = Rect2(0, 24, 15, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0vvxk"]
-atlas = ExtResource("3_x8wbj")
-region = Rect2(15, 24, 15, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jbyyh"]
-atlas = ExtResource("3_x8wbj")
-region = Rect2(30, 24, 15, 24)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_lb787"]
-animations = [{
-"frames": [{
-"duration": 1.31,
-"texture": SubResource("AtlasTexture_3ddeg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0vvxk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jbyyh")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Duolingo" type="Node2D"]
 
 [node name="City" type="TileMapLayer" parent="."]
@@ -11734,16 +11683,8 @@ tile_set = SubResource("TileSet_v4bok")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
 
-[node name="Duolingo" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(772.1875, 229.25002)
-scale = Vector2(13.1311, 10.315)
-sprite_frames = SubResource("SpriteFrames_p2tau")
-frame_progress = 0.7388752
+[node name="duolingo" parent="." instance=ExtResource("2_v4bok")]
+position = Vector2(608, -432)
 
-[node name="Nicole Idle" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(-1013.125, 523)
-scale = Vector2(14.950003, 10.583332)
-sprite_frames = SubResource("SpriteFrames_lb787")
-frame_progress = 0.592541
+[node name="Nicole" parent="." instance=ExtResource("3_x8wbj")]
+position = Vector2(-53, -47)
