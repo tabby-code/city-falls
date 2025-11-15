@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b8mwvpnafsvdo"]
 
-[ext_resource type="Script" uid="uid://0111x5pe8xnp" path="res://character_body_2d.gd" id="1_t0jo0"]
+[ext_resource type="Script" uid="uid://b0fm1ivsscp05" path="res://nicole_idle.gd" id="1_t0jo0"]
 [ext_resource type="Texture2D" uid="uid://v3gnrijn3hie" path="res://pixil-frame-0.png" id="2_i2oqi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ddeg"]
@@ -41,10 +41,8 @@ script = ExtResource("1_t0jo0")
 
 [node name="Nicole Idle" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-970.625, 549.5)
 scale = Vector2(20.616669, 12.791667)
 sprite_frames = SubResource("SpriteFrames_nimxv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-942, 548)
 shape = SubResource("CircleShape2D_kfjc6")

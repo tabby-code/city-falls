@@ -25,16 +25,16 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pugx"]
-radius = 209.46837
+radius = 275.19086
 
 [node name="duolingo" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(232, 408)
-scale = Vector2(11.023809, 9.180412)
+position = Vector2(321.75, 532.375)
+scale = Vector2(15.297619, 11.744844)
 sprite_frames = SubResource("SpriteFrames_ffh6a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(177, 303)
+position = Vector2(239, 421)
 shape = SubResource("CircleShape2D_8pugx")
