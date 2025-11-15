@@ -11710,5 +11710,5 @@ zoom = Vector2(0.5, 0.5)
 [node name="duolingo" parent="." instance=ExtResource("2_v4bok")]
 position = Vector2(608, -432)
 
-[node name="Nicole" parent="." instance=ExtResource("3_x8wbj")]
+[node name="Nicole" parent="." groups=["Nicole"] instance=ExtResource("3_x8wbj")]
 position = Vector2(-1018, 482)

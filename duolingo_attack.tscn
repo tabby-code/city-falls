@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://t0v0nfgyqfm7"]
+
+[ext_resource type="Script" path="res://duolingo_attack.gd" id="1_xoe0x"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0-4.png" id="2_ltjul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwsiv"]
+size = Vector2(44.3125, 43.125)
+
+[node name="Duolingo Attack" type="Area2D"]
+script = ExtResource("1_xoe0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -31)
+shape = SubResource("RectangleShape2D_dwsiv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.5000019, -32.125004)
+scale = Vector2(0.35, 0.32250008)
+texture = ExtResource("2_ltjul")

@@ -1,6 +1,45 @@
-[gd_scene load_steps=6 format=3 uid="uid://sotea1t25d02"]
+[gd_scene load_steps=8 format=3 uid="uid://sotea1t25d02"]
 
 [ext_resource type="Texture2D" uid="uid://cuk2poyrwjj87" path="res://pixil-frame-0-2.png" id="1_4tkq5"]
+
+[sub_resource type="GDScript" id="GDScript_4tkq5"]
+script/source = "extends CharacterBody2D
+
+var attack=preload(\"res://duolingo_attack.tscn\")
+var canshoot=true
+
+
+var player= null
+@export var speed=200.0
+@onready var spawnpos=$Spawnpos
+
+
+
+
+
+func _on_detection_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"Nicole\"):
+		player=body
+
+func _physics_process(delta: float) -> void:
+	var movement = Vector2(-2,0)
+	if player:
+		movement = position.direction_to(player.position)*speed
+	movement=move_and_collide(movement)
+
+
+func _on_timer_timeout():
+	canshoot=true
+	if player != null:
+		shoot()
+func shoot():
+	if canshoot:
+		var attack= attack.instantiate()
+		attack.position = spawnpos.global_position
+		get_parent().add_child(attack)
+		$Shootspeed.start()
+		canshoot=false
+"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyciq"]
 atlas = ExtResource("1_4tkq5")
@@ -27,7 +66,11 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pugx"]
 radius = 275.19086
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4tkq5"]
+radius = 638.452
+
 [node name="duolingo" type="CharacterBody2D"]
+script = SubResource("GDScript_4tkq5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -40,3 +83,13 @@ frame_progress = 0.28596324
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(239, 421)
 shape = SubResource("CircleShape2D_8pugx")
+
+[node name="Detection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
+position = Vector2(217, 428)
+shape = SubResource("CircleShape2D_4tkq5")
+
+[node name="Spawnpos" type="Marker2D" parent="Detection"]
+
+[node name="Shootspeed" type="Timer" parent="Detection"]
