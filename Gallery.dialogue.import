@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cys1qum6otb1"
+path="res://.godot/imported/Gallery.dialogue-424f972d232f87cfe1efc8b387d71e14.tres"
+
+[deps]
+
+source_file="res://Gallery.dialogue"
+dest_files=["res://.godot/imported/Gallery.dialogue-424f972d232f87cfe1efc8b387d71e14.tres"]
+
+[params]
+
+defaults=true
