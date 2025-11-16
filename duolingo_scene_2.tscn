@@ -11711,10 +11711,10 @@ shape = SubResource("RectangleShape2D_x8wbj")
 zoom = Vector2(0.5, 0.5)
 
 [node name="no fighting duolingo" parent="." instance=ExtResource("2_rn7l1")]
-position = Vector2(418, -592)
+position = Vector2(434, -583)
 
 [node name="Nicole" parent="." instance=ExtResource("3_cb2fg")]
-position = Vector2(-1018, 482)
+position = Vector2(-109, 487)
 
 [node name="Doors" type="Node2D" parent="."]
 
@@ -11724,6 +11724,26 @@ connected_scene = "Airport"
 connected_exit = "D"
 spawn_direction = "up"
 
+[node name="spawn_marker" parent="Doors/Duo_D" index="0"]
+position = Vector2(-131, 312)
+
+[node name="CollisionShape2D" parent="Doors/Duo_D" index="1"]
+position = Vector2(-2475, -66)
+
+[node name="Duo_C" parent="Doors" instance=ExtResource("5_ygaxw")]
+position = Vector2(911, 394)
+connected_scene = "Athena"
+connected_exit = "D"
+spawn_direction = "up"
+
+[node name="spawn_marker" parent="Doors/Duo_C" index="0"]
+position = Vector2(-1196, 338)
+
+[node name="CollisionShape2D" parent="Doors/Duo_C" index="1"]
+position = Vector2(224, -75)
+
 [connection signal="body_entered" from="Doors/Duo_D" to="Doors/Duo_D" method="_on_body_entered"]
+[connection signal="body_entered" from="Doors/Duo_C" to="Doors/Duo_C" method="_on_body_entered"]
 
 [editable path="Doors/Duo_D"]
+[editable path="Doors/Duo_C"]

@@ -11868,7 +11868,7 @@ shape = SubResource("RectangleShape2D_knobp")
 
 [node name="Duo_D" parent="Doors" instance=ExtResource("4_knobp")]
 position = Vector2(1188, 149)
-connected_scene = "duolingo_scene_2"
+connected_scene = "duoling_scene_2"
 connected_exit = "D"
 spawn_direction = "up"
 

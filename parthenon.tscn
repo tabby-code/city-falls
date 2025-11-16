@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://vs75iu6m4kkw"]
+[gd_scene load_steps=14 format=4 uid="uid://vs75iu6m4kkw"]
 
 [ext_resource type="Texture2D" uid="uid://ci7evoscelk5c" path="res://free-city-backgrounds-pixel-art/city 1/10.png" id="1_odduk"]
 [ext_resource type="Script" uid="uid://jc1cejtpkpks" path="res://parthenon.gd" id="1_qhl4g"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b8mwvpnafsvdo" path="res://nicole idle.tscn" id="2_q5tmo"]
 [ext_resource type="PackedScene" uid="uid://bc6v2f1wxh44d" path="res://athena character.tscn" id="3_qhl4g"]
 [ext_resource type="PackedScene" uid="uid://cfjco2d2chryu" path="res://no_fighting_duolingo.tscn" id="5_26l77"]
+[ext_resource type="PackedScene" uid="uid://c31cpqj2jbxb5" path="res://scene_trigger.tscn" id="7_26l77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q5tmo"]
 texture = ExtResource("1_odduk")
@@ -13575,7 +13576,7 @@ layer_0/tile_data = PackedInt32Array(1376306, 1441792, 2, 1441842, 1441792, 3, 1
 position = Vector2(-22, 52)
 
 [node name="Nicole" parent="." instance=ExtResource("2_q5tmo")]
-position = Vector2(-999, 466)
+position = Vector2(-885, 460)
 speed = null
 deceleration = null
 
@@ -13602,3 +13603,32 @@ shape = SubResource("RectangleShape2D_eu7cq")
 [node name="Boundary" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(29, 670)
 shape = SubResource("RectangleShape2D_eu7cq")
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="Parthenon_D" parent="Doors" instance=ExtResource("7_26l77")]
+position = Vector2(1188, 149)
+
+[node name="spawn_marker" parent="Doors/Parthenon_D" index="0"]
+position = Vector2(-131, 312)
+
+[node name="CollisionShape2D" parent="Doors/Parthenon_D" index="1"]
+position = Vector2(-2229, 58)
+
+[node name="Parthenon_C" parent="Doors" instance=ExtResource("7_26l77")]
+position = Vector2(911, 394)
+connected_scene = "gallery_one"
+connected_exit = "D"
+spawn_direction = "up"
+
+[node name="spawn_marker" parent="Doors/Parthenon_C" index="0"]
+position = Vector2(-1196, 338)
+
+[node name="CollisionShape2D" parent="Doors/Parthenon_C" index="1"]
+position = Vector2(186, -137)
+
+[connection signal="body_entered" from="Doors/Parthenon_D" to="Doors/Parthenon_D" method="_on_body_entered"]
+[connection signal="body_entered" from="Doors/Parthenon_C" to="Doors/Parthenon_C" method="_on_body_entered"]
+
+[editable path="Doors/Parthenon_D"]
+[editable path="Doors/Parthenon_C"]
