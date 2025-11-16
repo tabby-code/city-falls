@@ -1,11 +1,11 @@
-class_name Scene_Trigger 
-
+class_name scene_trigger 
 extends Area2D
 
-@export var connected: String
-var scene_folder = "res://scenes/"
+@export var connected_scene: String
+@export var connected_exit: String
+@export var spawn_direction: String
+@onready var spawn_marker = $Spawn
 
-func _on_area_entered(area: Area2D):
-	var fp = scene_folder + connected + ".tscnch"
-	var scene_tree = get_tree()
-	scene_tree.change_scene_to_file(fp)
+func _on_body_entered(body):
+	if body is Player:
+		SceneManager.go_to_level(connected_scene, connected_exit)
