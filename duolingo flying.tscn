@@ -72,9 +72,9 @@ script = SubResource("GDScript_4tkq5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(321.75, 532.375)
+scale = Vector2(15.2976, 11.7448)
 sprite_frames = SubResource("SpriteFrames_ffh6a")
 autoplay = "default"
-frame_progress = 0.28596324
 frame_progress = 0.285963
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
