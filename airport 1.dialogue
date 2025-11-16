@@ -6,12 +6,3 @@ Announcement: Why? Good question.
 Announcement: Your flight was delayed. 
 Announcement: Now...
 Announcement: Can you run?
-- Yes
-	On your feet...
-	Start! <runs>
-	
-- No
-	Well then, bye!
-	=> END!
-	
-	
