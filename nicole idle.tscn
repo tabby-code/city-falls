@@ -37,6 +37,7 @@ radius = 77.4919
 
 [node name="Nicole" type="CharacterBody2D" groups=["Nicole"]]
 position = Vector2(443, -88)
+collision_layer = 9
 script = ExtResource("1_t0jo0")
 
 [node name="Nicole Idle" type="AnimatedSprite2D" parent="."]
