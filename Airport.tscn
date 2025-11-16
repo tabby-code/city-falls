@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://21ycud8h5vm2"]
 
-[ext_resource type="Script" uid="uid://cx050lfeks8oy" path="res://airport.gd" id="1_knobp"]
+[ext_resource type="Script" path="res://airport.gd" id="1_knobp"]
 [ext_resource type="Texture2D" uid="uid://dftxs6a21lknv" path="res://free-city-backgrounds-pixel-art/city 2/10.png" id="2_jbilw"]
 [ext_resource type="Texture2D" uid="uid://g6gj0c4wlacu" path="res://Terrain (16x16).png" id="3_knobp"]
 [ext_resource type="PackedScene" uid="uid://b8mwvpnafsvdo" path="res://nicole idle.tscn" id="3_uprkc"]
@@ -11876,7 +11876,7 @@ connected_exit = "A"
 spawn_direction = "up"
 
 [node name="CollisionShape2D" parent="Doors/Duo_D" index="1"]
-position = Vector2(37, 15)
+position = Vector2(17.255493, 15.021744)
 rotation = -0.00110088
 
 [node name="Duo_G" parent="Doors" instance=ExtResource("4_knobp")]
