@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kfjc6"]
-radius = 110.2225
+radius = 77.491936
 
 [node name="Nicole" type="CharacterBody2D" groups=["Nicole"]]
 position = Vector2(443, -88)
@@ -47,4 +47,5 @@ autoplay = "default"
 frame_progress = 0.8843786
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, -3)
 shape = SubResource("CircleShape2D_kfjc6")
