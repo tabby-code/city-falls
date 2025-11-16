@@ -41,10 +41,10 @@ script = ExtResource("1_t0jo0")
 
 [node name="Nicole Idle" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(20.616669, 12.791667)
+scale = Vector2(20.6167, 12.7917)
 sprite_frames = SubResource("SpriteFrames_nimxv")
 autoplay = "default"
-frame_progress = 0.8843786
+frame_progress = 0.884379
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(28, -3)
