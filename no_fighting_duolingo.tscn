@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://cfjco2d2chryu"]
+
+[ext_resource type="Texture2D" uid="uid://cuk2poyrwjj87" path="res://pixil-frame-0-2.png" id="1_giejw"]
+
+[sub_resource type="GDScript" id="GDScript_4tkq5"]
+script/source = "extends CharacterBody2D
+
+var attack=preload(\"res://duolingo_attack.tscn\")
+var canshoot=true
+
+
+var player= null
+@export var speed=200.0
+@onready var spawnpos=$Spawnpos
+
+
+
+
+
+func _on_detection_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"Nicole\"):
+		player=body
+
+func _physics_process(delta: float) -> void:
+	var movement = Vector2(-2,0)
+	if player:
+		movement = position.direction_to(player.position)*speed
+	movement=move_and_collide(movement)
+
+
+func _on_timer_timeout():
+	canshoot=true
+	if player != null:
+		shoot()
+func shoot():
+	if canshoot:
+		var attack= attack.instantiate()
+		attack.position = spawnpos.global_position
+		get_parent().add_child(attack)
+		$Shootspeed.start()
+		canshoot=false
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyciq"]
+atlas = ExtResource("1_giejw")
+region = Rect2(0, 0, 42, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h28qo"]
+atlas = ExtResource("1_giejw")
+region = Rect2(42, 0, 42, 97)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffh6a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyciq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h28qo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8pugx"]
+radius = 275.19086
+
+[node name="no fighting duolingo" type="CharacterBody2D"]
+script = SubResource("GDScript_4tkq5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(321.75, 532.375)
+scale = Vector2(15.297619, 11.744844)
+sprite_frames = SubResource("SpriteFrames_ffh6a")
+autoplay = "default"
+frame_progress = 0.28596324
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(239, 421)
+shape = SubResource("CircleShape2D_8pugx")
