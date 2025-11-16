@@ -13577,8 +13577,6 @@ position = Vector2(-22, 52)
 
 [node name="Nicole" parent="." instance=ExtResource("2_q5tmo")]
 position = Vector2(-885, 460)
-speed = null
-deceleration = null
 
 [node name="no fighting duolingo" parent="." instance=ExtResource("5_26l77")]
 position = Vector2(472, -358)
@@ -13607,22 +13605,25 @@ shape = SubResource("RectangleShape2D_eu7cq")
 [node name="Doors" type="Node2D" parent="."]
 
 [node name="Parthenon_D" parent="Doors" instance=ExtResource("7_26l77")]
-position = Vector2(1188, 149)
+position = Vector2(900, 23)
+connected_scene = "Athena"
+connected_exit = "C"
+spawn_direction = "up"
 
 [node name="spawn_marker" parent="Doors/Parthenon_D" index="0"]
-position = Vector2(-131, 312)
+position = Vector2(-1877, 378)
 
 [node name="CollisionShape2D" parent="Doors/Parthenon_D" index="1"]
 position = Vector2(-2229, 58)
 
 [node name="Parthenon_C" parent="Doors" instance=ExtResource("7_26l77")]
-position = Vector2(911, 394)
+position = Vector2(853, 300)
 connected_scene = "gallery_one"
 connected_exit = "D"
 spawn_direction = "up"
 
 [node name="spawn_marker" parent="Doors/Parthenon_C" index="0"]
-position = Vector2(-1196, 338)
+position = Vector2(-130, 90)
 
 [node name="CollisionShape2D" parent="Doors/Parthenon_C" index="1"]
 position = Vector2(186, -137)

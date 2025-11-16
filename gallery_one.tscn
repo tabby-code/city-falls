@@ -11747,15 +11747,18 @@ shape = SubResource("RectangleShape2D_8wrbw")
 
 [node name="Doors" type="Node2D" parent="."]
 
-[node name="Athena_D" parent="Doors" instance=ExtResource("11_2htc8")]
+[node name="gallery_one_D" parent="Doors" instance=ExtResource("11_2htc8")]
 position = Vector2(-9470, 149)
+connected_scene = "parthenon"
+connected_exit = "C"
+spawn_direction = "up"
 
-[node name="spawn_marker" parent="Doors/Athena_D" index="0"]
-position = Vector2(-131, 312)
+[node name="spawn_marker" parent="Doors/gallery_one_D" index="0"]
+position = Vector2(752, -26)
 
-[node name="CollisionShape2D" parent="Doors/Athena_D" index="1"]
-position = Vector2(105, -314)
+[node name="CollisionShape2D" parent="Doors/gallery_one_D" index="1"]
+position = Vector2(354, -298)
 
-[connection signal="body_entered" from="Doors/Athena_D" to="Doors/Athena_D" method="_on_body_entered"]
+[connection signal="body_entered" from="Doors/gallery_one_D" to="Doors/gallery_one_D" method="_on_body_entered"]
 
-[editable path="Doors/Athena_D"]
+[editable path="Doors/gallery_one_D"]

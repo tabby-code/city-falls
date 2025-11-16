@@ -1,6 +1,6 @@
 class_name Player extends CharacterBody2D
 
-@export var speed =300.0
+@export var speed =400.0
 const jump=-500.0
 @export_range(0,1) var deceleration=0.1
 

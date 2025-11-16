@@ -7,6 +7,9 @@ signal spawn_player(position: Vector2, direction: String)
 var scenes = {
 	"Airport": preload("res://Airport.tscn"),
 	"duolingo_scene_2": preload("res://duolingo_scene_2.tscn"),
+	"Athena": preload("res://Athena.tscn"),
+	"parthenon": preload("res://parthenon.tscn"),
+	"gallery_one": preload("res://gallery_one.tscn"),
 
 	# Add your other scenes here
 }
