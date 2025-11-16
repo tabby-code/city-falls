@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 @export var speed =300.0
 const jump=-500.0
@@ -6,6 +6,16 @@ const jump=-500.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	SceneManager.connect("spawn_player", self._on_spawn_player)
+
+func _on_spawn_player(spawn_position: Vector2, direction: String):
+	global_position= spawn_position
+	
+	match direction:
+		"up":
+			$AnimatedSprite2D.play("nicole_idle")
+			
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y+= gravity * delta
