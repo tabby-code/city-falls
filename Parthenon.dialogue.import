@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c8cywsxsng75m"
+path="res://.godot/imported/Parthenon.dialogue-8248fc6109776cae9dc0b139474cb058.tres"
+
+[deps]
+
+source_file="res://Parthenon.dialogue"
+dest_files=["res://.godot/imported/Parthenon.dialogue-8248fc6109776cae9dc0b139474cb058.tres"]
+
+[params]
+
+defaults=true

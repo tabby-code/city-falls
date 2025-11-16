@@ -1,11 +1,58 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Nicole: Athena!
+
+Athena: Hello, you have been chosen to join me and the others at the Parthenon.
+
+Nicole: Yes!
+
+Athena: But you must answer three of my questions correctly.
+
+Nicole: But, I’m already running so late.
+
+Athena: This is a test of your wisdom 
+
+Nicole: Okay.
+
+Athena: My question is what is the best way to improve?
+
+- To give up
+	That's not right, a person shouldn't give up
+- Consistency
+	That's right, a person should continue to try over and over again until eventually success
+
+
+Athena: What is defines a person as intelligent? 
+
+*Thinking Nicole: Usually people define genius due to grades...
+
+Athena: ...
+
+*Thinking Nicole: But that's not true at all. 
+*Thinking Nicole: Artists like Vincent Van Gogh have always been ridiculed but they ended
+up creating master pieces
+
+Nicole: There is no true way of defining smart/wise as everyone is talented in many different areas.
+Nicole: since everyone is talented in different fields and everyone's intelligent strengths are different.
+Nicole: So in short, everybody is smart.
+
+Athena: Interesting. But you are right. Intelligence shouldn't be based on one set of system.
+
+Athena: My last question is...
+
+*Thinking Nicole: What is it?
+
+Athena: What would you like to be when you grow up?
+
+- I don't want a job
+	... Lazy Piece of Poop
+- I don't know
+	that's okay
+- Be a happier and better version of myself
+	Good
+
+Athena: Your responses gives me a view of your character and you have an interesting one
+
+Nicole: Okay...
+
+Athena: Go pass here and you shall see what awaits you at the parthenon.
 => END
