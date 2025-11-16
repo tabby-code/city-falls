@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://21ycud8h5vm2"]
 
-[ext_resource type="Script" path="res://airport.gd" id="1_knobp"]
+[ext_resource type="Script" uid="uid://cx050lfeks8oy" path="res://airport.gd" id="1_knobp"]
 [ext_resource type="Texture2D" uid="uid://dftxs6a21lknv" path="res://free-city-backgrounds-pixel-art/city 2/10.png" id="2_jbilw"]
 [ext_resource type="Texture2D" uid="uid://g6gj0c4wlacu" path="res://Terrain (16x16).png" id="3_knobp"]
 [ext_resource type="PackedScene" uid="uid://b8mwvpnafsvdo" path="res://nicole idle.tscn" id="3_uprkc"]
@@ -11849,7 +11849,7 @@ tile_map_data = PackedByteArray("AABU/zQAAAANAAQAAABV/zQAAAANAAQAAABW/zQAAAANAAQ
 tile_set = SubResource("TileSet_slhsa")
 
 [node name="Nicole" parent="." instance=ExtResource("3_uprkc")]
-position = Vector2(-1164, -123)
+position = Vector2(-1001, -153)
 scale = Vector2(0.69, 0.69)
 
 [node name="Camera2D" type="Camera2D" parent="Nicole"]
@@ -11863,7 +11863,7 @@ position = Vector2(6, -706)
 shape = SubResource("RectangleShape2D_knobp")
 
 [node name="coollison" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1206, -83)
+position = Vector2(-1146, -225)
 rotation = -1.56618
 shape = SubResource("RectangleShape2D_knobp")
 
@@ -11876,7 +11876,7 @@ connected_exit = "A"
 spawn_direction = "up"
 
 [node name="CollisionShape2D" parent="Doors/Duo_D" index="1"]
-position = Vector2(17.255493, 15.021744)
+position = Vector2(17.2555, 15.0217)
 rotation = -0.00110088
 
 [node name="Duo_G" parent="Doors" instance=ExtResource("4_knobp")]

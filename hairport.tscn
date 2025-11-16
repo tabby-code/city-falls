@@ -191,11 +191,6 @@ rotation_smoothing_enabled = true
 position = Vector2(6, -706)
 shape = SubResource("RectangleShape2D_knobp")
 
-[node name="coollison" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1206, -83)
-rotation = -1.56618
-shape = SubResource("RectangleShape2D_knobp")
-
 [node name="Doors" type="Node2D" parent="."]
 
 [node name="Duo_D" parent="Doors" instance=ExtResource("5_abjst")]
@@ -225,16 +220,16 @@ connected_exit = "M"
 spawn_direction = "up"
 
 [node name="CollisionShape2D" parent="Doors/Duo_M" index="1"]
-position = Vector2(-2367, -123)
+position = Vector2(-2118, -2001)
 
 [node name="Duo_A" parent="Doors" instance=ExtResource("5_abjst")]
 position = Vector2(1058, 129)
-connected_scene = "airport"
+connected_scene = "Airport"
 connected_exit = "D"
 spawn_direction = "up"
 
 [node name="CollisionShape2D" parent="Doors/Duo_A" index="1"]
-position = Vector2(-2367, -123)
+position = Vector2(-2265, -391)
 
 [connection signal="body_entered" from="Doors/Duo_D" to="Doors/Duo_D" method="_on_body_entered"]
 [connection signal="body_entered" from="Doors/Duo_G" to="Doors/Duo_G" method="_on_body_entered"]
