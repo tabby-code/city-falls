@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmpeg1rjes23s"]
+
+[ext_resource type="Texture2D" uid="uid://c11m4lsmlrabr" path="res://FA1C4797-D62A-437D-9FD4-A7EEAD80980A_1_105_c.jpeg" id="1_mkvx7"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(-41, 153.5)
+scale = Vector2(0.7265625, 0.71777344)
+texture = ExtResource("1_mkvx7")
