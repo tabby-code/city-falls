@@ -11833,6 +11833,7 @@ sources/0 = SubResource("TileSetAtlasSource_fgr6k")
 size = Vector2(2869.25, 93)
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-3, 21)
 script = ExtResource("1_knobp")
 
 [node name="City2" type="TileMapLayer" parent="."]
@@ -11870,8 +11871,8 @@ shape = SubResource("RectangleShape2D_knobp")
 
 [node name="Duo_D" parent="Doors" instance=ExtResource("4_knobp")]
 position = Vector2(1188, 149)
-connected_scene = "duolingo_scene_2"
-connected_exit = "D"
+connected_scene = "hairport"
+connected_exit = "A"
 spawn_direction = "up"
 
 [node name="CollisionShape2D" parent="Doors/Duo_D" index="1"]
