@@ -11844,7 +11844,7 @@ tile_map_data = PackedByteArray("AABU/zQAAAANAAQAAABV/zQAAAANAAQAAABW/zQAAAANAAQ
 tile_set = SubResource("TileSet_slhsa")
 
 [node name="Nicole" parent="." instance=ExtResource("3_uprkc")]
-position = Vector2(-1081, -126)
+position = Vector2(783, 203)
 
 [node name="Camera2D" type="Camera2D" parent="Nicole"]
 
@@ -11868,7 +11868,8 @@ position = Vector2(1188, 149)
 connected = "duolingo_scene_2"
 
 [node name="Ma_door" type="CollisionShape2D" parent="SceneTrigger"]
-position = Vector2(14, -169)
+light_mask = 9
+position = Vector2(-30, -167)
 rotation = -1.56618
 shape = SubResource("RectangleShape2D_knobp")
 script = ExtResource("4_jbilw")
