@@ -11689,6 +11689,7 @@ size = Vector2(1045, 1246)
 size = Vector2(13785, 431.5)
 
 [node name="Gallery One" type="Node2D"]
+position = Vector2(285, -134)
 script = ExtResource("1_oyfva")
 
 [node name="TileMap" type="TileMapLayer" parent="."]
@@ -11696,10 +11697,14 @@ tile_map_data = PackedByteArray("AABw/9H/AAAAAAUAAABw/9L/AAAAAAYAAABw/9P/AAAAAAc
 tile_set = SubResource("TileSet_nfh80")
 
 [node name="Nicole" parent="." instance=ExtResource("2_kox6n")]
-position = Vector2(-8961, 237)
+position = Vector2(-8937, 249)
+
+[node name="Camera2D" type="Camera2D" parent="Nicole"]
+position = Vector2(63, -430)
+zoom = Vector2(1, 0.57)
 
 [node name="Sprite 1" parent="." instance=ExtResource("3_4b277")]
-position = Vector2(-5593.88, -123.75)
+position = Vector2(-5788, -104)
 scale = Vector2(0.611655, 0.626465)
 
 [node name="Node2D" parent="." instance=ExtResource("4_oyfva")]
@@ -11715,7 +11720,7 @@ position = Vector2(-4749, -152)
 scale = Vector2(0.833985, 0.878906)
 
 [node name="Sprite2D3" parent="." instance=ExtResource("7_bej8n")]
-position = Vector2(-6472, -148)
+position = Vector2(-6627, -144)
 scale = Vector2(0.811198, 0.856445)
 
 [node name="Sprite2D4" parent="." instance=ExtResource("8_vcwfd")]
@@ -11727,7 +11732,7 @@ position = Vector2(-7546, -132)
 scale = Vector2(0.472649, 0.570513)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-19, 5)
+position = Vector2(-51, 13)
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-1556, -144)
