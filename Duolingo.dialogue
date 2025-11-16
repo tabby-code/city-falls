@@ -1,11 +1,32 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Duolingo: You finally made it.
+
+Nicole: I know.
+
+Duolingo: Have you forgotten something?
+
+Nicole: I don’t believe so?
+
+Duolingo: Your spanish….
+
+Nicole: Uhh, I can explain
+
+Duolingo: Go on ahead.
+
+Nicole: I was busy as I have to get to the Parthenon
+
+Duolingo: Oh? And this Parthenon is much more important than doing your Spanish?
+
+Nicole: Probably… It sounds fun and you get to meet different people from across the world.
+
+Duolingo: So?
+
+Nicole: I can learn more about different traditions and cultures from them and much more!
+
+Nicole: It's exciting. 
+
+Nicole: So, as much as exciting it is to talk to you but the parthenon is waiting for me in Civic Hall.
+
+Duolingo: Don’t forget to do your Spanish…
+
 => END

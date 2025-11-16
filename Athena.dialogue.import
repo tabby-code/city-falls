@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://5ynrkxqdioiw"
+path="res://.godot/imported/Athena.dialogue-ff7cd7808a6daaea39697c88cf7fd56b.tres"
+
+[deps]
+
+source_file="res://Athena.dialogue"
+dest_files=["res://.godot/imported/Athena.dialogue-ff7cd7808a6daaea39697c88cf7fd56b.tres"]
+
+[params]
+
+defaults=true
