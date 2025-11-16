@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cw58c6k537u2"]
+[gd_scene load_steps=9 format=3 uid="uid://cw58c6k537u2"]
 
 [ext_resource type="Texture2D" uid="uid://dlk747nwrfco4" path="res://free-city-backgrounds-pixel-art/city 7/7.png" id="1_uu6xs"]
 [ext_resource type="Script" uid="uid://007y7s7ohdbm" path="res://buttonduh.gd" id="2_r0du0"]
@@ -7,34 +7,91 @@
 texture = ExtResource("1_uu6xs")
 modulate_color = Color(0.288518, 0.288518, 0.288518, 1)
 
-[node name="Node2D" type="Node2D"]
-position = Vector2(579, 364)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu6xs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uu6xs"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0du0"]
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = -620.0
-offset_top = -423.0
-offset_right = 617.0
-offset_bottom = 298.0
+layout_mode = 0
+offset_left = -607.0
+offset_top = -385.0
+offset_right = 630.0
+offset_bottom = 336.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_cm0pq")
 
-[node name="Button" type="Button" parent="."]
-anchors_preset = 13
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -147.0
-offset_top = 80.0
-offset_right = 116.0
-offset_bottom = 111.0
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = -204.0
+offset_right = 213.0
+offset_bottom = -67.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(0.656285, 0.656285, 0.656285, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.99558, 0.99558, 0.99558, 1)
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 100
+text = "City Falls"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = 92.0
+offset_right = 131.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uu6xs")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fos0i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uu6xs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r0du0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cm0pq")
 text = "Start"
 script = ExtResource("2_r0du0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

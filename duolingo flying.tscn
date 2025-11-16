@@ -64,10 +64,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pugx"]
-radius = 275.19086
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_4tkq5"]
-radius = 638.452
+radius = 275.191
 
 [node name="duolingo" type="CharacterBody2D"]
 script = SubResource("GDScript_4tkq5")
@@ -75,10 +72,10 @@ script = SubResource("GDScript_4tkq5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(321.75, 532.375)
-scale = Vector2(15.297619, 11.744844)
 sprite_frames = SubResource("SpriteFrames_ffh6a")
 autoplay = "default"
 frame_progress = 0.28596324
+frame_progress = 0.285963
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(239, 421)
