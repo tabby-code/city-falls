@@ -1,17 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://b1fq1u00ba1sr"]
+[gd_scene load_steps=10 format=3 uid="uid://34ml1si5523a"]
 
 [ext_resource type="Texture2D" uid="uid://cyetvnp7ud8bl" path="res://IMG_0441.jpg.webp" id="1_e48h8"]
-[ext_resource type="Script" uid="uid://bdy1wpug3qw7v" path="res://airport_1.gd" id="1_i5t6y"]
-[ext_resource type="Script" uid="uid://dtcg541psmwi0" path="res://buttonnah.gd" id="3_88oty"]
+[ext_resource type="Script" path="res://airport_1.gd" id="1_i5t6y"]
+[ext_resource type="Script" path="res://buttonnah.gd" id="3_88oty"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5t6y"]
 texture = ExtResource("1_e48h8")
 modulate_color = Color(0.456464, 0.456464, 0.456464, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mh0dp"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pmgdu"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q7i34"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1fwj"]
 corner_radius_top_left = 24
 corner_radius_top_right = 24
 corner_radius_bottom_right = 24
@@ -24,18 +28,14 @@ corner_radius_top_right = 24
 corner_radius_bottom_right = 24
 corner_radius_bottom_left = 24
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1fwj"]
-corner_radius_top_left = 24
-corner_radius_top_right = 24
-corner_radius_bottom_right = 24
-corner_radius_bottom_left = 24
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q7i34"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pmgdu"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 24
 corner_radius_top_right = 24
 corner_radius_bottom_right = 24
 corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mh0dp"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_i5t6y")
@@ -64,15 +64,15 @@ offset_right = 720.0
 offset_bottom = 589.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_mh0dp")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_pmgdu")
-theme_override_styles/hover = SubResource("StyleBoxFlat_p66ng")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_v1fwj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q7i34")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v1fwj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p66ng")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_pmgdu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mh0dp")
 text = "Start"
 script = ExtResource("3_88oty")
 
